@@ -6,7 +6,7 @@ import {
 } from "pages/home/types";
 
 const getAvaiableHours = async (dateData: IGetAvaiableHoursRequest) =>
-  await defaultRequest.post("/auth/availableHours", dateData);
+  await defaultRequest.post("/appointments/availableHours", dateData);
 
 const setAppointment = async (data: IAppointment) =>
   await defaultRequest.post("/appointments", data);
